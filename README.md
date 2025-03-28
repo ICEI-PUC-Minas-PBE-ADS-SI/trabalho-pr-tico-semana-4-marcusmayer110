@@ -13,9 +13,12 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 - Proposta de projeto escolhida: catalogo de filmes
 - Breve descrição sobre seu projeto:
 
+## Print da versão atualizada
+
+![alt text](<public/images/site-atualizado (1).png>)
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](public/images/site-atualizado-até800px.png)
 
 ## Print da versão responsiva com Bootstrap
 

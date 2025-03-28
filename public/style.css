@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
 }
 
-
+/*rodapé - inicio */
 footer {
     width: 100%;
     margin-top: 100%;
@@ -21,16 +21,26 @@ footer {
 footer h5 {
     color: white;
     font-style: italic;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-/* classes*/
+/*rodapé - inicio */
 
-/*Menu*/
 
+/*cabeçalho - inicio */
+
+header {
+    display: block;
+    width: 100%;
+}
+
+.mobile{
+    display: none;
+}
 .campo-pesquisa {
+
     padding: 5px;
     border-radius: 5px;
     text-align: center;
@@ -39,19 +49,17 @@ footer h5 {
 
 .botao-pesquisa {
     padding: 8px 15px;
-    border-radius: 25px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 1.0rem;
 }
-
-
 
 .caixa-pesquisa {
     padding: 8px;
-    border-radius: 25px;
+    border-radius: 50px;
     border: none;
-    font-size: 15px;
+    font-size: 1.2rem;
 }
 
 .menu-navegação {
@@ -64,7 +72,6 @@ footer h5 {
     /*logo*/
     max-width: 125px;
     height: auto;
-
 }
 
 .menu-navegação ul {
@@ -76,16 +83,17 @@ footer h5 {
     list-style: none;
     display: inline-block;
     margin-left: 5px;
-
 }
-#logo-link{
+
+#logo-link {
     background-color: transparent;
     padding: 2px;
 }
-#logo-link:hover{
-   transform: scale(1.1);
-   border: solid 2px;
-   border-color: white;
+
+#logo-link:hover {
+    transform: scale(1.1);
+    border: solid 2px;
+    border-color: white;
 }
 
 .menu-navegação a {
@@ -104,47 +112,47 @@ footer h5 {
     background-color: rgb(173, 214, 214);
 }
 
+/*cabeçalho - fim */
+
+
 
 /*destaque-site*/
-
 .destaque-site {
     display: flex;
     justify-content: center;
     background: radial-gradient(rgb(71, 59, 240), rgb(32, 17, 75));
     border: 5px black;
     border-radius: 40px;
-
-
 }
 
 .botão-img img {
-    width: 1080px;
+    max-width: 1080px;
     height: auto;
     border: 2px solid transparent;
     transition: all 0.3s ease;
     border-radius: 20px;
-
 }
 
 .botão-img img:hover {
     transform: scale(1.1);
     border-color: black;
-
 }
 
 .texto-descrição {
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-left: 10px;
 }
+/*destaque site - fim */
+
+
 
 /* categorias*/
-
 .caixa-categoria h4 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 1.8rem;
     display: block;
     text-align: left;
     margin-left: 15px;
@@ -166,3 +174,77 @@ footer h5 {
 }
 
 
+/*responsividade mobile 600px -inicio */
+@media screen and (max-width: 800px) {
+
+
+    /*header - inicio*/
+
+    .botao-pesquisa{
+        display: none;
+    }
+
+    .caixa-pesquisa{
+        display: none;
+    }
+    .menu-navegação{
+        justify-content:space-between;
+    }
+    /*header - fim */
+
+
+    /*destaque site- inicio */
+    body {
+        flex: 1 1 600px;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    main div {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .botão-img img {
+        max-width: 400px;
+        height: auto;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        border-radius: 20px;
+    }
+
+    .texto-descrição {
+        display: none;
+    }
+    /*destaque site- fim */
+
+
+
+    /* categorias - inicio*/
+
+    .caixa-categoria h4 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.7rem;
+        display: block;
+        text-align: left;
+        margin-left: 15px;
+    
+    }
+
+    .movies {
+        width: 120px;
+        height: 120px;
+        margin-left: 15px;
+        border-radius: 20px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    /* categorias - fim*/
+
+}
+
+/*responsividade mobile 600px -fim */
