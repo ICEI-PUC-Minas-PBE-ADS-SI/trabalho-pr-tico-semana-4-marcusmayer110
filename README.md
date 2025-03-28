@@ -8,9 +8,9 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: marcus magnus de almeida mayer
+- Matricula: 888471
+- Proposta de projeto escolhida: catalogo de filmes
 - Breve descrição sobre seu projeto:
 
 ## Print da versão responsiva com CSS puro
